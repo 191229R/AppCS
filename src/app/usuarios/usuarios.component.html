@@ -1,0 +1,20 @@
+<div style = "text-align: center;">
+    <h1>
+        Hola {{ title }}
+    </h1>
+    <div *ngFor='let usuario of Usuar'>
+        <img [src]='usuario.picture.thumbnail'>
+        <h2>{{usuario.gender}}</h2>
+        <h3>{{ usuario.name.title }} {{ usuario.name.first }} {{ usuario.name.last }}</h3>
+        <h4> {{ usuario.location.street.number}} {{ usuario.location.street.name}}</h4>
+        <h5>{{ usuario.location.city}}</h5> 
+        <h6>{{ usuario.location.postcode}}</h6> 
+        <h3>{{ usuario.email}}</h3>
+        <p>{{usuario.phone}}</p>
+        <h3>{{ usuario.registered.date }} {{ usuario.registered.age }} </h3> 
+        <h2>{{ usuario.info.seed}}</h2>
+        
+
+    </div>
+
+</div>

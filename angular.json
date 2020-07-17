@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AppClienteServidor"
+    }
+  },
+  "defaultProject": "AppClienteServidor",
+  "cli": {
+    "analytics": "ffbe4674-91b6-4c5c-87ba-23b002706df7"
+  }
 }

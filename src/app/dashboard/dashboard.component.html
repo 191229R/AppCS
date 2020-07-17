@@ -1,0 +1,19 @@
+<div style = "text-align: center;">
+    <h1>
+        Hola {{ title }}
+    </h1>
+    <div *ngFor='let dash of Dashs'>
+        <img [src]='dash.picture.thumbnail'>
+        <h2>{{dash.gender}}</h2>
+        <h3>{{ dash.name.title }} {{ dash.name.first }} {{ dash.name.last }}</h3>
+        <h4> {{ dash.location.street.number}} {{ dash.location.street.name}}</h4>
+        <h5>{{ dash.location.city}}</h5> 
+        <h6>{{ dash.location.postcode}}</h6> 
+        <h3>{{ dash.email}}</h3>
+        <p>{{dash.phone}}</p>
+        <h3>{{ dash.registered.date }} {{ dash.registered.age }} </h3> 
+        
+
+    </div>
+
+</div>
